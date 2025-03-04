@@ -20,6 +20,7 @@ body {
     width: 500px;
     border: solid red;
     box-shadow: 0 0 30px rgb(21, 87, 87);
+    position: relative;
 }
 
 #snakeGameOutput {
@@ -32,6 +33,7 @@ body {
     width: 20px;
     background-color: green;
     animation: up-to-down-barrelroll alternate infinite 1s linear;
+    position: absolute;
     
 }
 @keyframes up-to-down-barrelroll {
