@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 20%, rgba(161,69,63,0.7301121132046569) 28%, rgba(0,212,255,1) 35%, rgba(45,172,201,1) 56%, rgba(64,155,178,1) 83%, rgba(77,144,163,1) 92%, rgba(77,144,163,1) 92%);
+    
+    * {
+        margin: 0;
+    }
+}
+#snakeGameCanvas {
+    background-color: goldenrod;
+    height: 500px;
+    width: 500px;
+    border: solid red;
+    box-shadow: 0 0 30px rgb(21, 87, 87);
+}
+
+#snakeGameOutput {
+    display: flex;
+    gap: 25rem;
+}
+
+#snakeHead {
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    animation: up-to-down-barrelroll alternate infinite 1s linear;
+    
+}
+@keyframes up-to-down-barrelroll {
+    from {
+        transform: translateY(0px) rotateX(120deg);
+    }
+    to {
+        transform: translateY(20px) rotateX(0deg);
+    }
+}
+
